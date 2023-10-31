@@ -170,6 +170,8 @@ export class MockController {
     get nodes(): ReadonlyMap<number, MockNode>;
     onNodeFrame(node: MockNode, frame: MockZWaveFrame): Promise<void>;
     // (undocumented)
+    get receivedHostMessages(): readonly Readonly<Message>[];
+    // (undocumented)
     removeNode(node: MockNode): void;
     sendToHost(data: Buffer): Promise<void>;
     sendToNode(node: MockNode, frame: LazyMockZWaveFrame): Promise<MockZWaveAckFrame | undefined>;

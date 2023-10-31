@@ -1723,6 +1723,8 @@ export class BasicCC extends CommandClass {
     // (undocumented)
     ccCommand: BasicCommand;
     // (undocumented)
+    getDefinedValueIDs(applHost: ZWaveApplicationHost_2): ValueID_2[];
+    // (undocumented)
     interview(applHost: ZWaveApplicationHost_2): Promise<void>;
     // (undocumented)
     refreshValues(applHost: ZWaveApplicationHost_2): Promise<void>;
@@ -1811,7 +1813,7 @@ export const BasicCCValues: Readonly<{
             readonly minVersion: 1;
             readonly supportsEndpoints: true;
             readonly stateful: false;
-            readonly autoCreate: (applHost: ZWaveApplicationHost_2, endpoint: IZWaveEndpoint_2) => boolean;
+            readonly autoCreate: false;
         };
     };
     restorePrevious: {
