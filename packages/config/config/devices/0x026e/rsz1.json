@@ -2,7 +2,7 @@
 	"manufacturer": "Springs Window Fashions",
 	"manufacturerId": "0x026e",
 	"label": "RSZ1",
-	"description": "Somfy Motorized Shade",
+	"description": "SC_Shade",
 	"devices": [
 		{
 			"productType": "0x5253",
